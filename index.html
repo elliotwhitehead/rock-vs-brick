@@ -11,21 +11,23 @@
     <a-scene embedded arjs>
       
       <a-assets>
-        <a-asset-item id="tree1" src="https://cdn.glitch.com/0fd76a52-2000-4c2c-bc23-c5c5b826aeb4%2FLowpoly_tree_sample.obj?v=1575323768598"></a-asset-item>
+        <a-asset-item id="rock" src="assets/rock.obj"></a-asset-item>
+        <a-asset-item id="iPhone6" src="assets/iPhone6.obj"></a-asset-item>
+        
       </a-assets>
       
       
       <a-marker preset="hiro">
-        <a-obj-model 
-                     src="#tree1" 
-                     color="#00FF00" 
-                     scale="0.05 0.05 0.05" 
-                     position="0 0 0"
-                     >
-        </a-obj-model>
+        <a-obj-model src="#rock" color="#5a4d41" scale="0.01 0.01 0.01" position="0 1.5 0"></a-obj-model>
+      </a-marker>
+        
+      
+      
+      <a-marker preset="kanji">
+        <a-obj-model src="#iPhone6" scale="0.2 0.2 0.2" color="#FAD7BD" rotation="-90 0 0" position="0 0 1.3"></a-obj-model>
       </a-marker>
 
-      <a-entity camera></a-entity>
+      <a-entity camera></a-entity> 
     </a-scene>
   </body>
 </html>
